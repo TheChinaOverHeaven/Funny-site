@@ -1,0 +1,47 @@
+body {
+    background-image: url("/images/fundog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'space mono', monospace;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.central {
+    padding: 20px;
+}
+
+#img {
+    border-radius: 10px;
+    height: 250px;
+    width: 500px;
+}
+
+#start {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-image: url("/images/fundogBu.jpg");
+    color: white;
+    width: 350px;
+    height: 50px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que jogador você seria?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+</head>
+<body>
+    <script src="index.js"></script>
+    
+    <div class="container">
+        <div class="txtAlign">
+            <h1>Qual jogador você seria?</h1>
+            <h2>DESCUBRA:</h2>
+        </div>
+    </div>
+    
+    <div class="container" id="divImagem">
+        <div class="central">
+            <img src="/images/selecao.jpeg" id="img" onmouseenter="info()" onmouseleave="info(true)">
+            <p id="info" style="font-size: 10px;"></p>
+        </div>
+    </div>
+
+    <div class="container" id="divBotao">
+        <button style="font-family: 'space mono', monospace;" id="start" onclick="outraPag('quiz.html')">
+            COMEÇAR O QUIZ
+        </button>
+    </div>
+</body>
+</html>

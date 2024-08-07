@@ -1,0 +1,82 @@
+body {
+    background-image: url("/images/fundog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'space mono', monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.central {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.coletar {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 10px;
+    background-image: url("/images/fundogIn.jpeg");
+    color: white;
+    border: 1px solid;
+    border-image: url("/images/fundogIn.jpeg");
+    border-radius: 5px;
+    outline: none;
+}
+
+.coletar::placeholder {
+    color: white;
+    font-family: 'space mono', monospace;
+    font-size: 10px;
+    text-align: center;
+}
+
+#enviar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-image: url("/images/fundogBu.jpg");
+    color: white;
+    margin-top: 10ox;
+    align-self: center;
+    font-family: 'space mono', monospace;
+}
+
+
+/* Remove os controles de incremento/decremento para campos de entrada tipo number, range, e outros */
+input[type="number"],
+input[type="range"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+}
+
+/* Remove as setas internas e externas em navegadores WebKit (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="range"]::-webkit-slider-thumb {
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Remove a aparência padrão para o tipo range (ajuste conforme necessário) */
+input[type="range"] {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="stylequiz.css">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+</head>
+<body>
+    <script src="index.js"></script>
+
+    <div class="container">
+        <div class="central">
+            <form action="" id="formulario" class="forms" onsubmit="outraPag('resultado.html')">
+                <label for="input1">CPF:</label><br>
+                <input type="number" class="coletar" required="required" placeholder="Digite aqui"
+                minlength="11" maxlength="11" oninput="this.value = this.value.slice(0, 11);"><br><br>
+
+                <label for="input2">Frente do cartão de crédito:</label><br>
+                <input type="number" class="coletar" required="required" placeholder="Digite aqui"
+                minlength="16" maxlength="16" oninput="this.value = this.value.slice(0, 16);"><br><br>
+
+                <label for="input2.2">Trás do cartão de crédito:</label><br>
+                <input type="number" class="coletar" required="required" placeholder="Digite aqui"
+                minlength="3" maxlength="3" oninput="this.value = this.value.slice(0, 3);"><br><br>
+
+                <label for="input3">Seu jogador favorito:</label><br>
+                <input type="text" class="coletar" required="required" placeholder="Digite aqui"
+                onkeypress="return verifLetra(event)"><br><br>
+
+                <label for="input4">Horário sem ninguém em casa:</label><br>
+                <input type="time" class="coletar" required="required" placeholder="Digite aqui"><br><br>
+
+                <label for="input5">Sua localização:</label><br>
+                <input type="text" class="coletar" required="required" placeholder="Digite aqui"><br><br>
+
+                <label for="input6">Localização itens de valor:</label><br>
+                <input type="text" class="coletar" required="required" placeholder="Digite aqui"><br><br>
+
+                <input type="submit" value="Descobrir o jogador" id="enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
